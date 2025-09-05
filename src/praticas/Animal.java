@@ -1,10 +1,19 @@
 package questAnimais;
 
-public class Animal {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+public class Animal{
+	String espécie;
+	String quantMembros;
+	public String getEspécie() {
+		return espécie;
 	}
-
+	public void setEspécie(String espécie) {
+		this.espécie = espécie;
+	}
+	public String getQuantMembros() {
+		return quantMembros;
+	}
+	public void setQuantMembros(String quantMembros) {
+		this.quantMembros = quantMembros;
+	}
+	
 }
