@@ -5,13 +5,11 @@ public class conta {
 	private String cpf;
 	private double saldo;
 	
-	
 	conta(String nome, String cpf, double saldo){
 		this.nome = nome;
 		this.cpf = cpf;
 		this.saldo = saldo;
 	}
-	
 	public String getnome() {
 		return nome;
 	}
@@ -46,5 +44,4 @@ public class conta {
 			System.out.println("O usuário não tem saldo suficiente ou valor inválido!");
 		}
 	}
-	
 }
