@@ -21,5 +21,4 @@ public class quest4_Animais {
 		System.out.println("Nome do terceiro animal: " + animal3.espécie + ", quantidade de membros do terceiro animal: " + animal3.quantMembros);
 		
 	}
-
 }
