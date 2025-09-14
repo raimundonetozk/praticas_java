@@ -19,5 +19,4 @@ public class Curso {
 		}
 		return soma/ alunos.length;
 	}
-	
 }
