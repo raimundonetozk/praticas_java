@@ -39,5 +39,4 @@ public class Codmoto{
 	public void setAno(int ano) {
 		this.ano = ano;
 	}
-	
 }
