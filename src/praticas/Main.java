@@ -1,35 +1,25 @@
-package quest5;
+package raio;
 import java.util.Scanner;
-
+import java.util.Locale;
+import util.Calculator;
 public class Main {
+	
 	public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        Professor prof = new Professor("João Silva", "Computação", "joao@universidade.com");
-        Curso curso = new Curso("POO", "Segundas 19h", prof, 5);
-
-        for (int i = 0; i < curso.alunos.length; i++) {
-            System.out.print("\nDigite o nome do aluno " + (i + 1) + ": ");
-            String nome = sc.nextLine();
-
-            System.out.print("Digite a matrícula de " + nome + ": ");
-            String matricula = sc.nextLine();
-
-            curso.alunos[i] = new Aluno(nome, matricula);
-            curso.alunos[i].LerNota(sc);
-        }
-
-        System.out.println("\n=== Resultados dos Alunos ===");
-        for (int i = 0; i < curso.alunos.length; i++) {
-            double media = curso.alunos[i].Media();
-            System.out.printf("Aluno: %s | Média: %.2f | %s\n",
-                    curso.alunos[i].nome,
-                    media,
-                    curso.alunos[i].Resultado() ? "APROVADO" : "REPROVADO");
-        }
-
-        System.out.printf("\nMédia da turma: %.2f\n", curso.MediaTurma());
-
-        sc.close();
-    }
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Calculator calc = new Calculator();
+		
+		System.out.println("Entre com o raio: ");
+		Double raio = sc.nextDouble();
+		
+		Double c = calc.circunferencia(raio);
+		
+		Double v = calc.volume(raio);
+		
+		System.out.printf("circunferencia: %.2f%n", c);
+		System.out.printf("Volume: %.2f%n", v);
+		System.out.printf("Valor de PI: %.5f%n", calc.PI);
+		
+	}
+	
 }
