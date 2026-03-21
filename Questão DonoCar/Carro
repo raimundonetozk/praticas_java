@@ -1,0 +1,29 @@
+package reforco1;
+
+public class Carro {
+	private String modelo;
+	private Pessoa dono;
+	
+	public Carro(String modelo, Pessoa dono) {
+		this.modelo = modelo;
+		this.dono = dono;
+	}
+	public String getModelo() {
+		return modelo;
+	}
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	public Pessoa getDono() {
+		return dono;
+	}
+	public void setDono(Pessoa dono) {
+		this.dono = dono;
+	}
+	
+	@Override
+	public String toString() {
+		return "Modelo do carro: " + modelo + "\n" + 
+				"Dono do carro: " + dono;
+	}
+}
