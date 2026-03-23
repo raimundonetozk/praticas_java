@@ -19,14 +19,14 @@ public class Main {
 		}
 		
 		 System.out.println("\n--- FUNCIONÁRIOS ---");
-	        for (Funcionario f : funcionarios) {
-	            f.exibirFuncionario();
+	        for (int i= 0; i<funcionarios.length; i++) {
+	        	funcionarios[i].exibirFuncionario();
 	            System.out.println("----------------");
 	        }
 
 	        System.out.println("\n--- GERENTES ---");
-	        for (Gerente g : gerentes) {
-	            g.exibirGerente();
+	        for (int i=0; i< gerentes.length;i++) {
+	            gerentes[i].exibirGerente();
 	            System.out.println("----------------");
 	        }
 
